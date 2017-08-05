@@ -1,0 +1,24 @@
+{
+  "name": "node-tide-example",
+  "version": "0.0.1",
+  "description": "Example application to show the workings of the node tide module",
+  "main": "./dist/index.js",
+  "scripts": {
+    "start": "npm run compile && node ./dist/index.js",
+    "compile": "rimraf dist && tsc -d",
+    "prepublish": "npm run compile"
+  },
+  "author": "Simon Skinner <simon@sisk-ltd.co.uk>",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3",
+    "moment": "^2.18.1",
+    "node-tide": "^0.1.4"
+  },
+  "devDependencies": {
+    "@types/node": "^7.0.32",
+    "rimraf": "^2.5.4",
+    "tslint": "^5.4.2",
+    "typescript": "^2.4.0"
+  }
+}
